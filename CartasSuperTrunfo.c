@@ -56,7 +56,7 @@ int main() {
     nomeCidade1[strcspn(nomeCidade1, "\n")] = 0;
 
     printf("Digite a população da cidade: \n");
-    scanf("%d", &populacao1);
+    scanf("%lu", &populacao1);
 
     printf("Digite a área da cidade (em km²): \n");
     scanf("%f", &area1);
@@ -97,7 +97,7 @@ int main() {
     nomeCidade2[strcspn(nomeCidade2, "\n")] = 0;
 
     printf("Digite a população da cidade: \n");
-    scanf("%d", &populacao2);
+    scanf("%lu", &populacao2);
 
     printf("Digite a área da cidade (em km²): \n");
     scanf("%f", &area2);
@@ -117,7 +117,7 @@ int main() {
     pibPerCapita2 = (pib2 * 1000000000.0)/ (float) populacao2;
 
     //Calculo do super poder da Carta 1:
-    superPoder2 = (float)populacao2 + area2 + pib2 + (float)qtdPontosTuristicos2 + pibPerCapita2 + (1.0f/ densidadePopulacional1);
+    superPoder2 = (float)populacao2 + area2 + pib2 + (float)qtdPontosTuristicos2 + pibPerCapita2 + (1.0f/ densidadePopulacional2);
 
     printf("\n");
 
